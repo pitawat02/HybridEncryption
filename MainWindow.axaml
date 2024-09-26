@@ -3,7 +3,7 @@
         x:Class="HybridEncryption.MainWindow"
         Title="Hybrid Encryption"
         Width="600" Height="550"
-        Icon="avares://HybridEncryption/Assets/app_icon.ico"
+        Icon="Assets/app_icon.ico"
         Background="#000"
         TransparencyLevelHint="AcrylicBlur">
 

@@ -9,13 +9,12 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <!-- <SelfContained>true</SelfContained> -->
     <PublishTrimmed>false</PublishTrimmed>
-    <PackageIcon>app_icon.ico</PackageIcon>
+    <!-- <PackageIcon>Assets\app_icon.ico</PackageIcon> -->
     <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-    <ApplicationIcon>app_icon.ico</ApplicationIcon>
-    <IncludeSymbolsInSingleFile>false</IncludeSymbolsInSingleFile>
-    <NSubsysTasksPath Condition="'$(NSubsysTasksPath)' == ''">$(HOME)/.nuget/packages/nsubsys/1.0.0/tool/NSubsys.Tasks.dll</NSubsysTasksPath>
+    <ApplicationIcon>Assets\app_icon.ico</ApplicationIcon>
+    <NSubsysTasksPath Condition="'$(NSubsysTasksPath)' == ''">C:\Users\Pitaw\.nuget\packages\nsubsys\1.0.0\tool\NSubsys.Tasks.dll</NSubsysTasksPath>
 
   </PropertyGroup>
 
@@ -44,11 +43,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <AvaloniaResource Include="app_icon.ico" />
-
-    <None Update="Assets\app_icon.ico">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <AvaloniaResource Include="Assets\app_icon.ico" />
 
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.1.0" />
