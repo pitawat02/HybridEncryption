@@ -3,6 +3,7 @@
         x:Class="HybridEncryption.MainWindow"
         Title="Hybrid Encryption"
         Width="600" Height="550"
+        Icon="avares://HybridEncryption/Assets/app_icon.ico"
         Background="#000"
         TransparencyLevelHint="AcrylicBlur">
 
@@ -109,9 +110,11 @@
                     Padding="10" 
                     Grid.Row="6">
                 <!-- Response TextBox -->
-                <TextBlock x:Name="EncryptFile_ResponseText" 
-                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                      TextWrapping="Wrap" Height="100" />
+                <TextBox x:Name="EncryptFile_ResponseText" Grid.Row="7"
+                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                     AcceptsReturn="True" TextWrapping="Wrap"
+                     IsReadOnly="True" Height="100"/>
+
             </Border>
 
           </Grid>
@@ -228,9 +231,10 @@
                     Padding="10" 
                     Grid.Row="7">
                 <!-- Response TextBox -->
-                <TextBlock x:Name="EncryptFolder_ResponseText" 
-                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                      TextWrapping="Wrap" Height="100" />
+                <TextBox x:Name="EncryptFolder_ResponseText" Grid.Row="7"
+                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                     AcceptsReturn="True" TextWrapping="Wrap"
+                     IsReadOnly="True" Height="100"/>
             </Border>
 
           </Grid>
@@ -297,9 +301,10 @@
                     Padding="10" 
                     Grid.Row="5">
                 <!-- Response TextBox -->
-                <TextBlock x:Name="CheckCert_ResponseText" 
-                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                      TextWrapping="Wrap" Height="100" />
+                <TextBox x:Name="CheckCert_ResponseText" Grid.Row="7"
+                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                     AcceptsReturn="True" TextWrapping="Wrap"
+                     IsReadOnly="True" Height="100"/>
             </Border>
           </Grid>
         </ScrollViewer>
